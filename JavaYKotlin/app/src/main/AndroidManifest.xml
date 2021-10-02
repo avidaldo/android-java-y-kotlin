@@ -9,15 +9,37 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.JavaYKotlin">
+
+        <!-- El atributo label se puede definir en cada activity de modo que el nombre que
+        aparezca bajo el icono de la activity lanzable sea distinto (Esto solo tiene sentido
+        por haber definido dos activities lanzables) -->
+
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".KotlinMainActivity"
+            android:exported="true"
+            android:label="@string/activity_kotlin">
+            <!-- Copiamos los intent-filter de MainActivity a MainActivityKotlin, declarando
+            de ese modo que es una Activity presente en el lanzador, a la que se puede acceder
+            directamente. Esto permitirá acceder a ella como si fuese otra app.
+            Este comportamiento no es habitual. Lo normal es que solo la Actividad principal sea
+            la que se lance, pero nos servirá para comparar en paralelo una activity básica en Java
+            y otra en Kotlin -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".JavaMainActivity"
+            android:exported="true"
+            android:label="@string/activity_java">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
     </application>
 
 </manifest>

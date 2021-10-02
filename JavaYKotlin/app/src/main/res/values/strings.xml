@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">JavaYKotlin</string>
+    <string name="activity_kotlin">KotlinActivty</string>
+    <string name="activity_java">JavaActivity</string>
 </resources>
