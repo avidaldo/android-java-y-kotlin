@@ -2,4 +2,6 @@
     <string name="app_name">JavaYKotlin</string>
     <string name="activity_kotlin">KotlinActivty</string>
     <string name="activity_java">JavaActivity</string>
+    <string name="activity_en_kotlin">Activity en Kotlin</string>
+    <string name="activity_en_java">Activity en Java</string>
 </resources>
