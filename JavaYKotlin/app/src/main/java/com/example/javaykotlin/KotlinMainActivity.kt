@@ -20,7 +20,7 @@ class KotlinMainActivity : AppCompatActivity() {
 
         buttonMAK.setOnClickListener {
             val intent = Intent(
-                this@KotlinMainActivity,  // https://kotlinlang.org/docs/this-expressions.html#qualified
+                this,  // https://kotlinlang.org/docs/this-expressions.html#qualified
                 JavaMainActivity::class.java
             )
             startActivity(intent)
