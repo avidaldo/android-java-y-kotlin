@@ -4,36 +4,25 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".KotlinMainActivity"
-
-
-    android:background="@android:color/holo_blue_dark">
-
-    <!-- Para diferenciar qué activity hemos lanzado, cambiamos
-    con el atributo background el color de cada layout y
-    colocamos un TextView en el centro de cada una, con
-    un texto distinto -->
+    android:background="@android:color/holo_green_dark"
+    tools:context=".JavaMainActivity">
 
     <TextView
-        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
-        android:text="@string/activity_en_kotlin"
+        android:text="@string/activity_en_java"
         android:textSize="30sp"
-        android:textStyle="bold"
-        android:textColor="@color/white"
-
+        android:textStyle="bold|italic"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <!-- Añadido un botón para asignarles el evento de cambio
- de activity -->
+    de activity -->
 
     <Button
-        android:id="@+id/buttonMAK"
+        android:id="@+id/buttonJava"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="30dp"

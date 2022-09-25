@@ -16,7 +16,7 @@ class KotlinMainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_kotlin_main)
 
-        val buttonMAK = findViewById<Button>(R.id.buttonMAK)
+        val buttonMAK = findViewById<Button>(R.id.buttonKotlin)
 
         buttonMAK.setOnClickListener {
             val intent = Intent(
