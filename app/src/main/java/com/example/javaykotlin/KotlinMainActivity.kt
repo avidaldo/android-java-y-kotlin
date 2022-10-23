@@ -6,23 +6,15 @@ import android.os.Bundle
 import android.widget.Button
 
 
-/**
- * Creamos una nueva activity:
- * (File > New > Activity > Empty Activity) seleccionando esta vez "Kotlin" como lenguaje.
- */
-
 class KotlinMainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_kotlin_main)
 
-        val buttonMAK = findViewById<Button>(R.id.buttonKotlin)
+        val buttonKotlin = findViewById<Button>(R.id.buttonKotlin)
 
-        buttonMAK.setOnClickListener {
-            val intent = Intent(
-                this,  // https://kotlinlang.org/docs/this-expressions.html#qualified
-                JavaMainActivity::class.java
-            )
+        buttonKotlin.setOnClickListener {
+            val intent = Intent(this,JavaMainActivity::class.java)
             startActivity(intent)
         }
 

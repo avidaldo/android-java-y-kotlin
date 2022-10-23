@@ -4,4 +4,5 @@
     <string name="activity_java">JavaActivity</string>
     <string name="activity_en_kotlin">Activity en Kotlin</string>
     <string name="activity_en_java">Activity en Java</string>
+    <string name="cambio_de_activity">Cambio de Activity</string>
 </resources>

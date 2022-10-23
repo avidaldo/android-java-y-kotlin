@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".KotlinMainActivity"
 
-
     android:background="@android:color/holo_blue_dark">
 
     <!-- Para diferenciar qué activity hemos lanzado, cambiamos
@@ -38,7 +37,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="30dp"
-        android:text="Cambio de Activity"
+        android:text="@string/cambio_de_activity"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
